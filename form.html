@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        input{
+            font-size: large;
+            width:40%;
+            padding:2px 2px;
+            box-sizing:border-box;
+           
+
+            
+        }
+    </style>
+    <link rel="icon" href="feedback.jpeg">
+</head>
+<body style="background-color: rgba(24, 71, 97, 0.5); text-shadow: 2px 2px 5px 0.7 blue">
+    <h1>Feedback form</h1>
+    <form action="form.html" target="_self" method="get" autocomplete="on" id="users">
+    
+<label for="fname" >Name</label><br><br>
+<input type="text" name="fname" required><br><br>
+<label for="rollno">Roll No</label><br><br>
+<input type="alphanumeric" name="rolno" required><br><br>
+<label for="branch">Branch</label><br><br>
+<input type="text" name="branch" required><br>
+<br>
+<p>Section</p>
+<select title="dropdown"><option selected>A</option>
+<option >B</option>
+<option>C
+</option>
+<option>D</option>
+<option>E</option>
+</select><br><br>
+<label for="Points">Overall experience</label><br><br>
+<input type="number" id="Points" name="Points" min="0" max="10">
+<br><br>
+<label for="file">Session Screenshot</label><br><br>
+<input type="file" name="file" required><br><br>
+<label for="any">Any Suggestions</label><br><br>
+<textarea name="any" row="10" cols="25"></textarea><br><br>
+<br>
+
+<!--<input type="Button" name="Submit" value="Submit">-->
+<input type="submit" onclick="showMessage()" value="submit" />
+
+
+</form>
+</body>
+</html>
